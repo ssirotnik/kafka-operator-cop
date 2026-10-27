@@ -8,9 +8,9 @@ replicaCount: 1
 
 image:
   # -- Image repository
-  repository: ghcr.io/sap/kafka-operator
+  repository: cs-devops.common.repositories.cloud.sap/ssirotnik/kafka-operator
   # -- Image tag (defauls to .Chart.AppVersion)
-  tag: ""
+  tag: "acl-test-89a40c5"
   # -- Image pull policy
   pullPolicy: IfNotPresent
 

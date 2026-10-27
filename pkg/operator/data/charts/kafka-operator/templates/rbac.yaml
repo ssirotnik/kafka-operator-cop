@@ -72,6 +72,24 @@ rules:
   - update
   - patch
 - apiGroups:
+  - kafka.cs.sap.com
+  resources:
+  - acls
+  verbs:
+  - get
+  - list
+  - watch
+  - update
+  - patch
+- apiGroups:
+  - kafka.cs.sap.com
+  resources:
+  - acls/status
+  verbs:
+  - create
+  - update
+  - patch
+- apiGroups:
   - ""
   resources:
   - events
@@ -121,6 +139,7 @@ rules:
   - kafka.cs.sap.com
   resources:
   - topics
+  - acls
   verbs:
   - list
   - get
