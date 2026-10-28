@@ -15,7 +15,8 @@ image:
   pullPolicy: IfNotPresent
 
 # -- Image pull secrets
-imagePullSecrets: []
+imagePullSecrets:
+  - name: cs-regcred
 
 # -- Additional pod labels
 podLabels: {}
